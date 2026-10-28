@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - SpectraPulse Pro</title>
+  <meta name="description" content="Official Privacy Policy for SpectraPulse Pro Android application.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="assets/icon_512.png">
+  <style>
+    .privacy-content {
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 2.5rem;
+      background: var(--surface-card);
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+    }
+    .privacy-content h1 {
+      font-size: 2.2rem;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+    .privacy-content h2 {
+      font-size: 1.35rem;
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 0.4rem;
+      color: var(--text-main);
+    }
+    .privacy-content p, .privacy-content li {
+      color: var(--text-muted);
+      font-size: 1rem;
+      line-height: 1.7;
+      margin-bottom: 1rem;
+    }
+    .privacy-content ul {
+      padding-left: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <a href="index.html" class="nav-brand">
+      <img src="assets/icon_512.png" alt="SpectraPulse Pro Icon">
+      SPECTRAPULSE <span>PRO</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#features">Features</a>
+      <a href="index.html#screenshots">Screenshots</a>
+      <a href="index.html#download" class="btn-primary">Google Play</a>
+    </nav>
+  </header>
+
+  <main class="privacy-content">
+    <div class="badge">COMPLIANCE & TRANSPARENCY</div>
+    <h1>Privacy Policy</h1>
+    <p><strong>Effective Date:</strong> October 27, 2026<br>
+    <strong>Application Name:</strong> SpectraPulse Pro: rPPG Vitals & Seismograph<br>
+    <strong>Package Name:</strong> <code>com.spectrapulse.vitals</code></p>
+
+    <h2>1. Overview & Zero-Cloud Privacy Commitment</h2>
+    <p>
+      SpectraPulse Pro is a biomedical and micro-seismological analysis application designed for researchers, athletes, and privacy-conscious users. We maintain an uncompromising zero-cloud privacy architecture: <strong>we do not collect, transmit, store on remote servers, or share any personal user data, biometric facial imagery, video frames, physiological records, device identifiers, or analytics telemetry.</strong>
+    </p>
+
+    <h2>2. Sensor & Camera Hardware Permissions</h2>
+    <p>To perform contactless vital sign monitoring and vibration detection, SpectraPulse Pro requests access to device hardware:</p>
+    <ul>
+      <li>
+        <strong>Camera Permission (<code>android.permission.CAMERA</code>):</strong>
+        Required exclusively to capture raw optical frame streams (YUV buffers) for real-time remote photoplethysmography (rPPG). Pixel color intensities in the green/red spectrum are extracted directly inside volatile device RAM (CPU memory). <strong>No photographs, video recordings, or facial representations are EVER saved to device storage, cached to disk, or transmitted over any network.</strong> Once the green channel average intensity is computed, each video frame is instantly released from memory.
+      </li>
+      <li>
+        <strong>Motion Sensors (Accelerometer & Gyroscope):</strong>
+        Accessed locally to detect structural vibrations, tremor frequency, and cardiac Ballistocardiograph recoil. Sensor data remains strictly in volatile memory.
+      </li>
+      <li>
+        <strong>Haptic Feedback (<code>android.permission.VIBRATE</code>):</strong>
+        Used solely to provide instantaneous tactile feedback when a systolic heartbeat or seismic peak is detected.
+      </li>
+    </ul>
+
+    <h2>3. Zero Third-Party Trackers & Zero Advertisements</h2>
+    <p>
+      SpectraPulse Pro contains no tracking SDKs, no behavioral monitoring libraries, no advertising networks, and no external analytics frameworks (no Firebase, no Facebook SDK, no AppsFlyer). The application operates 100% offline.
+    </p>
+
+    <h2>4. Local Data Retention & User Control</h2>
+    <p>
+      Any biometric session logs recorded by the user (such as calculated BPM, HRV RMSSD, and respiration metrics) are saved exclusively in the application's private, encrypted sandbox storage on the device. Users can permanently clear session archives at any time or manually export their telemetry as an RFC-4180 CSV file via the standard Android system share sheet.
+    </p>
+
+    <h2>5. Children's Privacy Protection</h2>
+    <p>
+      SpectraPulse Pro does not collect data from anyone, including children under the age of 13. The application does not require user accounts, email addresses, or names.
+    </p>
+
+    <h2>6. Policy Updates & Inquiries</h2>
+    <p>
+      Any updates to this policy will be published at this permanent URL. For questions or technical verification of our local signal processing engine, please contact the engineering team via our GitHub repository issues portal or the Google Play developer contact page.
+    </p>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 SpectraPulse Pro Engineering Team. 100% Offline Biometric Edge Intelligence.</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#features">Features</a>
+      <a href="index.html#specs">Specs</a>
+    </div>
+  </footer>
+
+</body>
+</html>
